@@ -8,7 +8,7 @@ import (
 )
 
 func TestRacer(t *testing.T) {
-	t.Run("blah", func(t *testing.T) {
+	t.Run("compares speeds of servers, returning the url of the fastest one", func(t *testing.T) {
 
 		// Creating two test servers (these are real severs)
 		slowServer := makeDelayedServer(20 * time.Millisecond)
